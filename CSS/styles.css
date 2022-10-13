@@ -1,0 +1,48 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --md: 1.6rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+main {
+    width: 100vw;
+    height: 95vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--pale-blue);
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Card Styles */
+
+.order-card-container {
+    max-width: 355px;
+    height: auto;
+    background-color: var(--very-pale-blue);
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.order-card-container .card-main--img {
+    width: 100%;
+    height: auto;
+}
