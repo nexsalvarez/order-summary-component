@@ -36,7 +36,7 @@ main {
 .order-card-container {
     max-width: 355px;
     height: auto;
-    background-color: var(--very-pale-blue);
+    background-color: white;
     border-radius: 16px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-bottom: 40px;
@@ -45,4 +45,95 @@ main {
 .order-card-container .card-main--img {
     width: 100%;
     height: auto;
+}
+.order-card-container h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--dark-blue);
+    margin: 32px 0 20px 0;
+}
+.order-card-container p {
+    font-size: var(--md);
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+.order-card-container .card-main--phrase {
+    padding: 0 28px;
+}
+.card-plan {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 24px;
+    padding: 12px 20px;
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+}
+.card-plan figure {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+.card-plan .card-plan--selected {
+    margin-right: 24px;
+}
+.card-plan h2 {
+    font-size: var(--md);
+    font-weight: 900;
+    line-height: 2rem;
+    color: var(--dark-blue);
+}
+.card-plan .change {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--bright-blue);
+}
+.card-plan .change:hover {
+    color: #776CF0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.card-confirmation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+}
+.card-confirmation button {
+    width: 100%;
+    height: auto;
+    font-size: var(--md);
+    font-weight: 700;
+    color: white;
+    background-color: var(--bright-blue);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 0;
+}
+.card-confirmation button:hover {
+    background-color: #776CF0;
+    cursor: pointer;
+}
+.card-confirmation a {
+    font-size: var(--md);
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    margin-top: 20px;
+}
+.card-confirmation a:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
 }
