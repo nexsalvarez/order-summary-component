@@ -49,7 +49,7 @@ main {
 .order-card-container h1 {
     font-size: 2rem;
     font-weight: 900;
-    line-height: 2rem;
+    line-height: 2.4rem;
     text-align: center;
     color: var(--dark-blue);
     margin: 32px 0 20px 0;
@@ -57,7 +57,7 @@ main {
 .order-card-container p {
     font-size: var(--md);
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 2.4rem;
     text-align: center;
     color: var(--desaturated-blue);
 }
@@ -70,7 +70,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 24px;
+    margin: 20px 24px 28px 24px;
     padding: 12px 20px;
     background-color: var(--very-pale-blue);
     border-radius: 12px;
@@ -86,7 +86,7 @@ main {
 .card-plan h2 {
     font-size: var(--md);
     font-weight: 900;
-    line-height: 2rem;
+    line-height: 2.4rem;
     color: var(--dark-blue);
 }
 .card-plan .change {
@@ -136,4 +136,49 @@ main {
 .card-confirmation a:hover {
     color: var(--dark-blue);
     cursor: pointer;
+}
+
+/* Footer Styles */
+
+footer {
+    width: 100vw;
+    height: 5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+    padding: 0 20px;
+}
+footer p {
+    font-size: var(--md);
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--dark-blue);
+}
+footer a {
+    text-decoration: none;
+    color: var(--bright-blue);
+}
+footer a:hover {
+    color: #776CF0;
+}
+
+/* Media queries */
+
+@media (min-width: 540px) {
+    main {
+        background-image: url('../images/pattern-background-desktop.svg');
+        background-position: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .order-card-container {
+        min-width: 400px;
+    }
+    .card-plan {
+        width: 88%;
+    }
+    .card-plan .card-plan--selected {
+        margin-right: 80px;
+    }
 }
